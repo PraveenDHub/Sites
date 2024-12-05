@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: palegoldenrod;
+    display: grid;
+    place-content: center;
+}
+
+.container{
+    width: 600px;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+table{
+    width: 100%;
+    border: 1px solid #a1a1a1;
+    border-collapse: collapse;
+}
+
+table tr th{
+    background-color: #a1a1a1;
+    font-weight: 500;
+    color: aliceblue;
+    padding: 10px 15px;
+    border: 1px solid #a1a1a1;
+}
+
+table tr td{
+    border: 1px solid #a1a1a1;
+    padding: 10px 15px;
+}
+
+#btnExport{
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #fff;
+    background-color: green;
+    border-radius: 3px;
+    border: none;
+}

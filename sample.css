@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 22px;
+}
+
+body{
+    padding: 1rem;
+    background-color: darkslategrey;
+}
+
+.box{
+    width: 8rem;
+    border: 5px solid white;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.box img:hover{
+    transform: scale(1.5);
+}
+
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.4s;
+    transform-origin: top;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 1rem;
+}
+
+.control{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0px;
+    height: 100px;
+}
+
+.btn-group button{
+    width: 80px;
+    height: 30px;
+    font-size: 0.5rem;
+    background-color: #00b894;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2px solid #00b894;
+}
+
+.btn-group button:hover,
+.btn-group .btn-clicked{
+    background-color: white;
+    color: #00b894;
+}
+
+#Search{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 0.6rem;
+    border: 2px solid #00b894;
+}

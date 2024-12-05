@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.context-menu{
+    width: 200px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    user-select: none;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.context-divider{
+    margin: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.context-item{
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.2s;
+}
+
+.context-item:hover{
+    background-color: #f8f8f8;
+}

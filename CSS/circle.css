@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.progress-group{
+    width: 300px;
+    padding: 50px 0;
+    background-color: #dff9fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0,0,0,0.25) 0px 25px 50px -12px;
+}
+
+.circular-progress{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    position: relative;
+}
+
+.circular-progress::before{
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.course-value{
+    font-size: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.text{
+    margin-top: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/target.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container{
+            width: 80%;
+            background-color: #aeaeae;
+            border-radius: 5px;
+        }
+
+        .content:target{
+            height: 80px;
+            transition: all 0.5s ease-in;
+        }
+
+        .content{
+            height: 0px;
+            overflow: hidden;
+        }
+
+        a{
+            display: block;
+            background-color: gray;
+            padding: 10px;
+            text-decoration: none;
+            color: aliceblue;
+            transition: all 0.5s ease;
+        }
+
+        a:hover{
+            background-color: #e1bfbf;
+        }
+
+        .content > p{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tag">
+            <a href="#p1" class="Menu">Tag 1</a>
+            <div id="p1" class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias architecto reprehenderit fugiat error quod modi alias impedit qui illo</p>
+            </div>
+        </div>
+            <a href="#p2" class="Menu">Tag 2</a>
+            <div id="p2" class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias architecto reprehenderit fugiat error quod modi alias impedit qui illo</p>
+            </div>
+
+            <a href="#p3" class="Menu">Tag 3</a>
+            <div id="p3" class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias architecto reprehenderit fugiat error quod modi alias impedit qui illo</p>
+            </div>
+    </div>
+</body>
+</html>
